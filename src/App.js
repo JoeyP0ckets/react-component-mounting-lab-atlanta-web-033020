@@ -6,7 +6,12 @@ class App extends Component {
 
   //no props being used here, so we can use the shorthand declaration of state
   state = {
-    timerIDs: []
+    timerIDs: [],
+    handleAddTimer: null
+  }
+
+  componentDidMount() {
+    this.handleAddTimer()
   }
 
 
